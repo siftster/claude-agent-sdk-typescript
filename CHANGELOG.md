@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.205
+
+- Interrupt control responses now include `still_queued` (UUIDs of queued async messages that will still run), `Query.interrupt()` returns the typed receipt, and `system/init` advertises an `interrupt_receipt_v1` capability for feature detection
+- Added structured `name` and `body` fields to peer-message session events, exposing the sender display name and decoded message body
+
 ## 0.3.204
 
 - Added `terminal_reason` values `tool_deferred_unavailable` (deferred tool resume found the tool gone — previously an `is_error` result with no reason, read as a clean completion by lifecycle sweeps) and `turn_setup_failed` (the turn-input builder threw before the turn started). Both classify as dead turns, so commands consumed by them report `command_lifecycle` state `cancelled`
