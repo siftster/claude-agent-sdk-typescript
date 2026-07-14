@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.210
+
+- Added `timedOutAfterMs` to `BashToolOutput`, set when a command is auto-backgrounded on timeout
+
 ## 0.3.209
 
 - Updated to parity with Claude Code v2.1.209
