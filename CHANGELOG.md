@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.209
+
+- Updated to parity with Claude Code v2.1.209
+
 ## 0.3.208
 
 - Fixed a caller abort during a pending SDK hook callback being converted into hook success, which let PreToolUse-gated tools execute after the abort
